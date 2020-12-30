@@ -1,0 +1,212 @@
+/* Global Styles */
+:root {
+    --primary-color: #17a2b8;
+    --dark-color: #343a40;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  
+  /* Overlay */
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Forms */
+  .form .form-group {
+    margin: 1.2rem 0;
+  }
+  .formulaire {
+    background-color: rgba(58, 57, 57, 0.397);
+    border-radius: 10px;
+    width: 50%;
+}
+.Login {
+    background: gray;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Asets/backImage.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+  .sign {
+    border: 2px solid rgb(80, 80, 80);
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 50px;
+}
+  
+  .form .form-text {
+    display: block;
+    margin-top: 0.3rem;
+    color: #888;
+  }
+  
+  .form input[type='text'],
+  .form input[type='email'],
+  .form input[type='password'],
+  .form input[type='date'],
+  .form select,
+  .form textarea {
+   
+
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+  }
+  
+  .form input[type='submit'],
+  button {
+    font: inherit;
+  }
+  
+  .form .social-input {
+    display: flex;
+  }
+  
+  .form .social-input i {
+    padding: 0.5rem;
+    width: 4rem;
+  }
+  
+  .form .social-input i.fa-twitter {
+    color: #38a1f3;
+  }
+  .form .social-input i.fa-facebook {
+    color: #3b5998;
+  }
+  .form .social-input i.fa-instagram {
+    color: #3f729b;
+  }
+  .form .social-input i.fa-youtube {
+    color: #c4302b;
+  }
+  .form .social-input i.fa-linkedin {
+    color: #0077b5;
+  }
+  
+  .table th,
+  .table td {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .table th {
+    background: var(--light-color);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 700px) {
+    .container {
+      margin-top: 8rem;
+    }
+  
+    .hide-sm {
+      display: none;
+    }
+  
+    /* Text Styles */
+    .x-large {
+      font-size: 3rem;
+    }
+  
+    .large {
+      font-size: 2rem;
+    }
+  
+    .lead {
+        font-size: 1.25rem;
+    font-weight: 300;
+    color: black;
+    }
+  
+    /* Navbar */
+    .navbar {
+      display: block;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .navbar h1 {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar .welcome {
+      display: none;
+    }
+  
+    /* Profiles Page */
+    .profile {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .profile ul {
+      display: none;
+    }
+  
+    /* Profile Page */
+  
+    .profile-top img,
+    .profile img {
+      width: 200px;
+      margin: auto;
+    }
+  
+    .profile-grid {
+      grid-template-areas:
+        'top'
+        'about'
+        'exp'
+        'edu'
+        'github';
+    }
+  
+    .profile-about .skills {
+      flex-direction: column;
+    }
+  
+    .dash-buttons a {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.2rem;
+    }
+  
+    .post {
+      grid-template-columns: 1fr;
+    }
+    .post a,
+    .post button {
+      padding: 0.3rem 0.4rem;
+    }
+  }
+  
